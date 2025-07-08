@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "preloader.html" . }}
+
+    <header>
+      <!-- Site title – editable per-page -->
+      <h1
+        data-sb-object-id="{{ .File.BaseFileName }}"
+        data-sb-field-path="title"
+      >
+        {{ .Title }}
+      </h1>
+      {{ partial "nav.html" . }}
+    </header>
+
+    <!-- Main content region – inline-editable -->
+    <main class="site-content">
+      <section
+        data-sb-object-id="{{ .File.BaseFileName }}"
+        data-sb-field-path="content"
+      >
+        {{ block "main" . }}{{ end }}
+      </section>
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

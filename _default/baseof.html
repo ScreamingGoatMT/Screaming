@@ -5,7 +5,6 @@
     {{ partial "preloader.html" . }}
 
     <header>
-      <!-- Site title – editable per-page -->
       <h1
         data-sb-object-id="{{ .File.BaseFileName }}"
         data-sb-field-path="title"
@@ -15,7 +14,6 @@
       {{ partial "nav.html" . }}
     </header>
 
-    <!-- Main content region – inline-editable -->
     <main class="site-content">
       <section
         data-sb-object-id="{{ .File.BaseFileName }}"

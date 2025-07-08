@@ -1,8 +1,13 @@
 [build]
-publish = "public"
-command = "yarn project-setup && yarn build"
+  publish = "public"
+  command = "yarn project-setup && yarn build"
 
 [build.environment]
-HUGO_VERSION = "0.147.2"
-GO_VERSION = "1.24.3"
-HUGO_BASEURL = "/"
+  HUGO_VERSION = "0.147.2"
+  GO_VERSION   = "1.24.3"
+  HUGO_BASEURL = "/"
+
+[[plugins]]
+  package = "@netlify/plugin-visual-editor"
+  [plugins.inputs]
+    branch = "main"

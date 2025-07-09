@@ -1,4 +1,4 @@
-// stackbit.config.ts (overwrite entirely, no leading stray characters)
+// stackbit.config.ts
 import { defineStackbitConfig } from "@stackbit/types";
 import { GitContentSource } from "@stackbit/cms-git";
 
@@ -53,8 +53,3 @@ export default defineStackbitConfig({
     })
   ]
 });
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4ffae29f8215f034f5e7bd0ea77c75d83ced39e3
